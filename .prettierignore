@@ -1,0 +1,9 @@
+/public
+/node_modules
+.gitignore
+.prettierignore
+LICENSE*
+package.json
+package-lock.json
+yarn.lock
+yarn-error.log
