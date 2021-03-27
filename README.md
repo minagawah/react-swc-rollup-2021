@@ -13,7 +13,7 @@ A template project for React apps using SWC and Rollup.
 ## 2. Installed NPM Packages
 
 ```
-yarn add --dev @swc/core @swc/cli @rollup/plugin-node-resolve @rollup/plugin-commonjs rollup-plugin-swc rollup-plugin-auto-external @rollup/plugin-alias rollup-plugin-serve rollup-plugin-livereload @rollup/plugin-replace rollup-plugin-postcss rollup-plugin-terser @testing-library/react concurrently prettier pretty-quick
+yarn add --dev @swc/core @swc/cli @rollup/plugin-alias @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-replace rollup-plugin-auto-external rollup-plugin-livereload rollup-plugin-serve rollup-plugin-swc rollup-plugin-postcss rollup-plugin-terser @testing-library/react concurrently prettier pretty-quick
 ```
 
 We download `react`, `react-dom`, and `react-router-dom` from the CDN service (jsdelivr),
@@ -22,14 +22,14 @@ we need to set them in `externals` and `output.globals`.
 
 - @swc/core
 - @swc/cli
-- @rollup/plugin-node-resolve
-- @rollup/plugin-commonjs
-- rollup-plugin-swc
-- rollup-plugin-auto-external
 - @rollup/plugin-alias
-- rollup-plugin-serve
-- rollup-plugin-livereload
+- @rollup/plugin-commonjs
+- @rollup/plugin-node-resolve
 - @rollup/plugin-replace
+- rollup-plugin-auto-external
+- rollup-plugin-livereload
+- rollup-plugin-serve
+- rollup-plugin-swc
 - rollup-plugin-postcss
 - rollup-plugin-terser
 - @testing-library/react
