@@ -16,9 +16,9 @@ export default {
   external: ['react', 'react-dom', 'react-router-dom'],
   output: {
     file: 'public/js/app.js',
-    // For 'external' and 'output.globals' are only available
-    // when we output bundles in either 'iife' or 'umd',
-    // we are not specifying 'es'.
+    // Notice 'external' and 'output.globals'
+    // are NOT available for 'es', and are
+    // only available for 'iife' or 'umd'.
     format: 'umd',
     globals: {
       react: 'React',
@@ -54,7 +54,6 @@ export default {
       jsc: {
         parser: {
           jsx: true,
-          // exportDefaultFrom: true,
         },
         target: 'es2015',
       },
